@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pyromet ara és Pyrosmet</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0b1220">
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:#0b1220;color:#eef3fa;font-family:"Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+main{width:min(520px,100%);background:#0f1829;border:1px solid #22304a;border-radius:20px;padding:36px 30px 30px}
+.logo{font-size:24px;font-weight:700;letter-spacing:-.03em;margin-bottom:26px}
+.logo b{color:#38bdf8}
+h1{margin:0 0 14px;font-size:28px;line-height:1.15;letter-spacing:-.02em}
+p{margin:0 0 12px;font-size:16.5px;line-height:1.55;color:#c3cfdf}
+a.btn{display:block;text-align:center;margin:24px 0 22px;background:#f97316;color:#1a0d02;font-weight:700;font-size:17px;text-decoration:none;padding:15px 20px;border-radius:11px}
+a.btn:hover{background:#fb8a3a}
+a.btn:focus-visible{outline:3px solid #fbbf24;outline-offset:3px}
+.alt{border-top:1px solid #22304a;padding-top:16px;margin-top:4px}
+.alt p{font-size:14.5px;color:#93a4bb;margin-bottom:8px}
+</style>
+</head>
+<body>
+<main>
+  <div class="logo">Pyros<b>met</b></div>
+  <h1>Pyromet ara és Pyrosmet</h1>
+  <p>La ferramenta s'ha traslladat a una adreça nova: <strong>pyrosmet.com</strong>.</p>
+  <p>Entra-hi amb el mateix correu i la mateixa contrasenya. Si tenies l'app instal·lada, desinstal·la-la i torna-la a instal·lar des de l'adreça nova.</p>
+  <a class="btn" href="https://pyrosmet.com/app/">Obri Pyrosmet</a>
+  <div class="alt">
+    <p lang="es">La herramienta se ha trasladado a <strong>pyrosmet.com</strong>. Entra con el mismo correo y la misma contraseña; si tenías la app instalada, vuelve a instalarla desde la nueva dirección.</p>
+    <p lang="en">The tool has moved to <strong>pyrosmet.com</strong>. Sign in with the same email and password; if you had the app installed, install it again from the new address.</p>
+  </div>
+</main>
+<script>
+/* neteja la còpia que l'app antiga guardava en este navegador, perquè no torne a obrir-se la versió vella */
+try{ if("serviceWorker" in navigator) navigator.serviceWorker.getRegistrations().then(function(rs){ rs.forEach(function(r){ r.unregister(); }); });
+     if(window.caches) caches.keys().then(function(ks){ ks.forEach(function(k){ caches.delete(k); }); }); }catch(e){}
+</script>
+</body>
+</html>
